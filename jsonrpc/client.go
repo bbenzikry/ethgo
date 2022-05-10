@@ -65,3 +65,8 @@ func (c *Client) Call(method string, out interface{}, params ...interface{}) err
 func (c *Client) SetMaxConnsLimit(count int) {
 	c.transport.SetMaxConnsPerHost(count)
 }
+
+func (c *Client) IsHTTP() (bool, *transport.HTTP) {
+	res, ok := c.transport.(*transport.HTTP)
+	return ok, res
+}

@@ -10,14 +10,14 @@ import (
 // HTTP is an http transport
 type HTTP struct {
 	addr    string
-	client  *fasthttp.Client
+	Client  *fasthttp.Client
 	headers map[string]string
 }
 
 func newHTTP(addr string, headers map[string]string) *HTTP {
 	return &HTTP{
 		addr:    addr,
-		client:  &fasthttp.Client{},
+		Client:  &fasthttp.Client{},
 		headers: headers,
 	}
 }
@@ -60,7 +60,7 @@ func (h *HTTP) Call(method string, out interface{}, params ...interface{}) error
 	}
 	req.SetBody(raw)
 
-	if err := h.client.Do(req, res); err != nil {
+	if err := h.Client.Do(req, res); err != nil {
 		return err
 	}
 
@@ -81,5 +81,5 @@ func (h *HTTP) Call(method string, out interface{}, params ...interface{}) error
 
 // SetMaxConnsPerHost sets the maximum number of connections that can be established with a host
 func (h *HTTP) SetMaxConnsPerHost(count int) {
-	h.client.MaxConnsPerHost = count
+	h.Client.MaxConnsPerHost = count
 }
