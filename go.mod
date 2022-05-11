@@ -17,6 +17,8 @@ require (
 	github.com/valyala/fastjson v1.4.1
 	pgregory.net/rapid v0.5.5
 	go.etcd.io/bbolt v1.3.6
+	golang.org/x/crypto v0.0.0-20220214200702-86341886e292
+	golang.org/x/text v0.3.7
 )
 
 require (
@@ -44,8 +46,8 @@ require (
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/sirupsen/logrus v1.4.2 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
-	golang.org/x/net v0.0.0-20190813141303-74dc4d7220e7 // indirect
-	golang.org/x/sys v0.0.0-20200923182605-d9f96fdee20d // indirect
+	golang.org/x/net v0.0.0-20220225172249-27dd8689420f // indirect
+	golang.org/x/sys v0.0.0-20220227234510-4e6760a101f9 // indirect
 	google.golang.org/appengine v1.6.5 // indirect
 	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 // indirect
 	gopkg.in/yaml.v2 v2.2.2 // indirect
