@@ -11,7 +11,7 @@ type Request struct {
 	ID             uint64          `json:"id"`
 	Method         string          `json:"method"`
 	Params         json.RawMessage `json:"params"`
-	RequestContext interface{}
+	RequestContext interface{}     `json:"-"`
 }
 
 // Response is a jsonrpc response
