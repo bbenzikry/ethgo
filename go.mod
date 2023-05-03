@@ -15,10 +15,10 @@ require (
 	github.com/umbracle/fastrlp v0.0.0-20220527094140-59d5dd30e722
 	github.com/valyala/fasthttp v1.4.0
 	github.com/valyala/fastjson v1.4.1
-	pgregory.net/rapid v0.5.5
 	go.etcd.io/bbolt v1.3.6
 	golang.org/x/crypto v0.0.0-20220214200702-86341886e292
 	golang.org/x/text v0.3.7
+	pgregory.net/rapid v0.5.5
 )
 
 require (

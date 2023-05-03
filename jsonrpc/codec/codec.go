@@ -17,7 +17,7 @@ type Request struct {
 // Response is a jsonrpc response
 type Response struct {
 	ID     uint64          `json:"id"`
-	Result json.RawMessage `json:"result"`
+	Result json.RawMessage `json:"result,omitempty"`
 	Error  *ErrorObject    `json:"error,omitempty"`
 }
 
